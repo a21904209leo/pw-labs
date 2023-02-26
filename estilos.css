@@ -1,0 +1,113 @@
+*{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+body {
+    background-color: #FFAB66;
+    text-align: center;
+}
+
+#textoesquerda{
+    text-align: left;
+}
+
+[src="images/submit.png"]{
+    width: 120px;
+    height: 40px;
+}
+
+nav > a{
+    padding: 8px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+nav > a:hover{
+    background-color: #AEBEE2;
+    color: white;
+}
+
+nav > a:active{
+    background-color: #A4DBDB;
+    color: white;
+}
+
+nav > a.active{
+    background-color: #FFE9BE;
+    font-weight: bold;
+    color: black;
+}
+
+nav > a.active::before{
+    content: "\02B50";
+}
+
+nav > a:hover::after{
+    content: "\01F448";
+}
+
+h3 + p {
+    text-decoration: underline;
+}
+
+#pageMenu a{
+    text-decoration: none;
+    color: black;
+}
+
+#pageMenu a:hover{
+    color: white;
+}
+
+footer p::before {
+    content: "\01F34B";
+}
+footer p::after {
+    content: "\01F98A";
+}
+
+fieldset.first {
+    background-color: #FFE9BE;
+}
+
+fieldset.second {
+    background-color: #A4DBDB;
+}
+
+fieldset.third {
+    background-color: #AEBEE2;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: auto;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+.styled-table thead tr {
+    background-color: #f58020;
+    color: #ffffff;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #f58020;
+}
+
+#poema {
+    text-align: center;
+    font-style: italic;
+}

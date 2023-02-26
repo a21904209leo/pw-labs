@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+
+        <title>Évora</title>
+
+        <meta charset="utf-8">
+        <meta name="author" content="Leandro Pinheiro">
+        <meta name="description" content="Website sobre Lisboa">
+        <meta name="keywords" content="evora">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">  
+
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Évora</h1>
+
+            <figure>
+                <img src="images/evora.png" alt="Évora">
+                <figcaption>Templo de Diana em Évora</figcaption>
+                <details>Um dos templos romanos mais bem preservados em toda a Península Ibérica, tendo sido considerado Património Mundial pela UNESCO em 1986. Foi construído no início do século I, d.C., e fica situado no centro histórico da cidade, mais precisamente, no Largo Conde de Vila Flor</details>
+            </figure>
+        </header>
+        <br>
+
+        <nav>
+            <a href="index.html">🏡Introdução</a>
+            <a href="local.html">🌍Localização</a>
+            <a href="multimedia.html">🎬Multimedia</a>
+            <a href="info.html">🆘Informação</a>
+            <a href="quizz.html" class="active">🕹️Quizz</a>
+            <a href="html5-css.html">📡HTML 5 e CSS</a>
+        </nav>
+        <br>
+
+        <main>
+            <section>
+                <h3>Quizz</h3>
+                <p>Responda ào seguinte Quizz para mostrar que conhece bem a cidade de Évora</p>
+                
+                <form method="post" action="mailto: leandrompp2001@gmail.com" id="form1" enctype="multipart/form-data">
+                    <fieldset class="first">
+                        <legend>Quizz Évora</legend>
+                        <fieldset class="second">
+                            <legend>info</legend>
+                            <label>
+                                <p>Nome: <input type="text" name="nome" placeholder="Leandro" autofocus required></p>
+                            </label>
+                            <label>
+                                <p>Apelido: <input type="text" name="apleido" placeholder="Pinheiro" required></p>
+                            </label>
+                            <label>
+                                <p>Email: <input type="email" name="email" placeholder="nome@gmail.com" required></p>
+                            </label>
+                        </fieldset>
+                        <fieldset class="third">
+                            <legend>perguntas</legend>
+
+                            <h4>Qual o nome da Deusa a que o templo foi dedicado?</h4>
+                            <label>
+                                <input type="text" name="nomeDaDeusa" placeholder="Carla" autocomplete="on" size="8" maxlength="20" pattern="[A-Za-z]">
+                            </label>
+                            <br><br>
+
+                            <h4>Quais deste monumentos estã situados em Évora?</h4>
+                            <label>
+                                <p>Torre de Belém <input type="checkbox" name="Monumento1" value="Torre de Belém"></p>
+                            </label>
+                            <label>
+                                <p>Templo de Diana <input type="checkbox" name="Monumento2" value="Templo de Diana"></p>
+                            </label>
+                            <label>
+                                <p>Santuário do Bom Jesus <input type="checkbox" name="Monumento3" value="Santuário do Bom Jesus"></p>
+                            </label>
+                            <label>
+                                <p>Capela de Ossos <input type="checkbox" name="Monumento4" value="Capela dos Ossos"></p>
+                            </label>
+                            <br>
+
+                            <h4>Évora é uma cidade: </h4>
+                            <label>
+                                <p><input type="radio" name="tipoDeCidade" value="Ribatejana"> Ribatejana</p>
+                            </label>
+                            <label>
+                                <p><input type="radio" name="tipoDeCidade" value="Alentejana"> Alentejana</p>
+                            </label>
+                            <label>
+                                <p><input type="radio" name="tipoDeCidade" value="Algarvia"> Algarvia</p>
+                            </label>
+                            <br>
+
+                            <h4>Em que dia foi inaugurado o centro comercial Évora Plaza</h4>
+                            <label>
+                                <input type="date" name="dataEvoraPlaza" >
+                            </label>
+                            <br><br>
+
+                            <h4>A bandeira de Évora tem a cor amarela e a cor</h4>
+                            <label>
+                                <input type="color" name="corDaBandeira" list="color">
+                            </label>
+                            <br><br>
+
+                            <datalist id="color">
+                                <option>#ff0000</option>
+                                <option>#0000ff</option>
+                                <option>#00ff00</option>
+                                <option>#ffff00</option>
+                                <option>#00ffff</option>
+                              </datalist>
+
+                            <h4>Em que ano Évora foi considerada património mundial pela UNESCO</h4>
+                            <label>
+                                <input type="number" name="anoUNESCO" placeholder="1XXX">
+                            </label>
+                            <br><br>
+
+                            <h4>Qual a densidade populacional de Évora</h4>
+                            <label>
+                                <p><input type="range" name="densidadePopulacional" min="0" max="100" oninput="valor.value = parseInt(densidadePopulacional.value)"><output name="valor" for="densidadePopulacional">50</output> hab/km<sup>2</sup></p>
+                            </label>
+                            <br>
+
+                            <h4>Selecione o Pais e Continente a que Évora pertence</h4>
+                            <select name="geografiaEvora" multiple>
+                                <option value="Franca">França</option>
+                                <option value="Europa">Continente Europeu</option>
+                                <option value="Portugal">Portugal</option>
+                                <option value="Ásia">Continente Asiático</option>
+                            </select>
+                            <br><br>
+
+                </form>
+                            <label>
+                                <input type="image" name="submitImage" src="images/submit.png" alt="Submit" form="form1">
+                            </label>
+                        </fieldset>
+                        <br><br>
+                        <textarea form="form1" name="comentário" placeholder="Insira um Comentário"></textarea>
+                        <br><br>
+                        <input type="submit">
+                        <br><br>
+                    </fieldset>
+            </section>
+        </main>
+
+        <footer>
+            <p>Leandro Pinheiro a21904209 Universidade Lusófona 2023</p>
+        </footer>
+    </body>
+</html>
